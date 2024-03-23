@@ -43,8 +43,21 @@ class PostDetails extends Controller
     }
 
     protected function loadData(): void
-    {
-        // TODO: Load post from database here. $this->params[0] is the post id.
-        $this->post = null;
+    { // Get the post ID from the URL parameter
+        $postId = $this->params[0] ?? null;
+        
+        // If no post ID is provided, set $this->post to null and return
+        if ($postId === null) {
+            $this->post = null;
+            return;
+        }
+
+        // Fetch the post from the database based on the ID
+        $post = Model\Post::findPublishedById($postId);
+
+        // If the post is found, assign it to $this->post
+        if ($post !== null) {
+            $this->post = $post;
+        }
     }
 }
