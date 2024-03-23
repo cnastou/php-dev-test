@@ -27,15 +27,26 @@ class Checkout extends Layout
                                         <th>Quantity</th>
                                     </tr>
                                 </thead>
+                                <!-- Replace it with the High-Res <img> -->
                                 <tbody>
                                     <tr>
-                                        <td>Product Thumbnail</td>
+                                        <td><img src="highres-assets/product.jpg" alt="Product Thumbnail"></td>
                                         <td>Lorem Widget</td>
                                         <td>1</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
+                    </div>
+                    <!-- Added CheckBox for the beta program -->
+                    <div class="frame">
+                     <h2 class="frame__title">Beta Program</h2>
+                     <div class="frame__contents">
+                      <label>
+                       <input type="checkbox" name="beta_program" value="1" />
+                          With our “Rise & Shine” beta program, you get early access to new features, but they may not always work perfectly. You can change your beta preference at any time after you join.
+                      </label>
+                     </div>
                     </div>
                     <div class="frame">
                         <h2 class="frame__title">Account Details</h2>
