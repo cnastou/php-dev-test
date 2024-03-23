@@ -90,6 +90,13 @@ class Checkout extends Layout
                                     </div>
                                 </div>
                             </div>
+                            <!-- Second optional Line #2 for Address -->
+                            <div class="form-field">
+                                <label class="form-field__label" for="billing_address_line2">Address Line 2 (Optional):</label>
+                                <div class="form-field__contents">
+                                    <input type="text" name="billing_address_line2" id="billing_address_line2" class="entry" value="" size="35" maxlength="255" />
+                                </div>
+                            </div>
                             <div class="form-field form-field--required">
                                 <label class="form-field__label" for="billing_address_city">City: <span class="form-field__label-required"> (required)</span></label>
                                 <div class="form-field__contents">
