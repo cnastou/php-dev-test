@@ -122,6 +122,13 @@ class Checkout extends Layout
                             </div>
                         </div>
                     </div>
+                    <!-- ADDED A SUMBIT BUTTON TO PLACE ORDER !-->
+                    <!-- ALSO ADDED CSS CODE FOR THE BUTTON !-->
+                    <div class="frame">
+                        <div class="frame__contents">
+                            <button type="submit" class="submit-button">Place Order</button>
+                        </div>
+                    </div>
                 </form>
 HTML;
         // @codingStandardsIgnoreEnd

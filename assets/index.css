@@ -111,3 +111,17 @@ main {
   border-bottom: 1px solid #eee;
   padding: 0.5rem;
 }
+
+.submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
